@@ -3,7 +3,7 @@
 <title>Titulo do site</title>
 <head>
 
-<meta http-equiv="refresh" content="0; URL=http://{{$registro->url}}"> 
+<meta http-equiv="refresh" content="0; URL=https://{{$registro->url}}"> 
 
 </head>
 <body>
