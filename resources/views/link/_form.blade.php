@@ -2,7 +2,7 @@
 <div class="row">
     <div class="input-field">
         <input id="titulo" type="text" class="" name="titulo" value="{{ isset($registro->titulo)? $registro->titulo: old( 'titulo')}}"  autocomplete="titulo" autofocus>
-        <label for="titulo">Título</label>
+        <label for="titulo">Título (nome que ira ser exibido na url)</label>
         @error('titulo')
         <span class="helper-text" style="color:red"  >{{ $message }}</span>
         @enderror
@@ -11,7 +11,7 @@
 <div class="row">
     <div class="input-field">
         <input id="url" type="text" class="" name="url" value="{{ isset($registro->url)? $registro->url: old( 'url')}}"  autocomplete="url">
-        <label for="url">Nome url</label>
+        <label for="url">URL Destino</label>
         @error('url')
         <span class="helper-text" style="color:red"  >{{ $message }}</span>
         @enderror
