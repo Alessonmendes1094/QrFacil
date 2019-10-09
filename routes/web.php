@@ -22,7 +22,6 @@ Route::group(['middleware'=>'auth'],function(){
 	Route::post('/{cliente}/link/salvar',     	['as'=>'link.salvar',   'uses'=>'LinksController@salvar']);
 	Route::get('/{cliente}/link/editar/{id}', 	['as'=>'link.editar',   'uses'=>'LinksController@editar']);
 	Route::get('/{cliente}/link/deletar/{id}',  ['as'=>'link.deletar',  'uses'=>'LinksController@deletar']);
-	Route::get('/{cliente}/{id}',  				['as'=>'link.acesso',  'uses'=>'LinksController@acesso']);
 
 	Route::get('/usuario/',         	                ['as'=>'usuario.home',        'uses'=>'LoginController@index']);
 	Route::get('/usuario/adicionar/',                   ['as'=>'usuario.adicionar',   'uses'=>'LoginController@adicionar']);
@@ -36,6 +35,8 @@ Route::group(['middleware'=>'auth'],function(){
 Auth::routes();
 	
 });
+
+Route::get('/{cliente}/{id}',  				['as'=>'link.acesso',  'uses'=>'LinksController@acesso']);
 
 Auth::routes();
 
