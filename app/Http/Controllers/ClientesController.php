@@ -61,13 +61,13 @@ class ClientesController extends Controller
         //Validação Formulário
 		$valid = [
 			'nome'      => 'required|unique:clientes|min:3|max:100',
-			'fantasia'  => 'required|min:3|max:100',
-			'email'     => 'required|min:3|max:100',
-			'cnpj'      => 'required|unique:clientes|min:3|max:100',
-			'telefone'  => 'required|min:3|max:100',
-			'contato'   => 'required|min:3|max:100',
-			'cidade'    => 'required|min:3|max:100',
-			'endereco'  => 'required|min:3|max:100',
+			'cnpj'      => 'max:100',
+			'fantasia'  => 'max:100',
+			'email'     => 'max:100',
+			'telefone'  => 'max:100',
+			'contato'   => 'max:100',
+			'cidade'    => 'max:100',
+			'endereco'  => 'max:100',
 		];
 		$messages = [
 			'required' => 'O campo é de preenchimento obrigatório!',
@@ -85,13 +85,13 @@ class ClientesController extends Controller
         //Validação Formulário
 		$valid = [
 			'nome'      => 'required|min:3|max:100',
-			'fantasia'  => 'required|min:3|max:100',
-			'email'     => 'required|min:3|max:100',
-			'cnpj'      => 'required|min:3|max:100',
-			'telefone'  => 'required|min:3|max:100',
-			'contato'   => 'required|min:3|max:100',
-			'cidade'    => 'required|min:3|max:100',
-			'endereco'  => 'required|min:3|max:100',
+			'fantasia'  => 'max:100',
+			'email'     => 'max:100',
+			'cnpj'      => 'max:100',
+			'telefone'  => 'max:100',
+			'contato'   => 'max:100',
+			'cidade'    => 'max:100',
+			'endereco'  => 'max:100',
 		];
 		$messages = [
 			'required' => 'O campo é de preenchimento obrigatório!',
